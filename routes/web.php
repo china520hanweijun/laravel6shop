@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// 第三方登录
+Route::get('/oauth/github', 'Auth\LoginController@redirectToProvider')->name('gitauth');
+Route::get('/oauth/github/callback', 'Auth\LoginController@handleProviderCallback')->name('gitback');

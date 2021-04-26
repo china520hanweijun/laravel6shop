@@ -30,4 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    //qq登录
+//    'qq' => [
+//        'client_id' => env('QQ_CLIENT_ID'),
+//        'client_secret' => env('QQ_CLIENT_SECRET'),
+//        'redirect' => env('QQ_REDIRECT_URI')
+//    ],
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRETS'),
+        'redirect' => env('GITHUB_AUTH_CALLBACK_URL'),
+    ],
+
 ];
