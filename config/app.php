@@ -160,6 +160,8 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
 //        Illuminate\Translation\TranslationServiceProvider::class,
         Overtrue\LaravelLang\TranslationServiceProvider::class,
+//        //MARKDOWN
+//        Arcanedev\LaravelMarkdown\LaravelMarkdownServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         //社会化登录

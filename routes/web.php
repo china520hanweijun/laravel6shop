@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('blog', 'BlogController');
+Route::resource('comment', 'CommentController')->only(['store', 'destroy']);
+
 // 第三方登录
 Route::get('/oauth/github', 'Auth\LoginController@redirectToProvider')->name('gitauth');
 Route::get('/oauth/github/callback', 'Auth\LoginController@handleProviderCallback')->name('gitback');

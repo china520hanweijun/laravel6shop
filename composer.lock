@@ -4,8 +4,150 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6cbc8d74130b6afc4b3344c89fc61a2",
+    "content-hash": "76a5e0fbc9625e11e7d7506784878f38",
     "packages": [
+        {
+            "name": "arcanedev/laravel-markdown",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/LaravelMarkdown.git",
+                "reference": "11d24e806e5bd1540288619ea8adafc38d8fb8e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/LaravelMarkdown/zipball/11d24e806e5bd1540288619ea8adafc38d8fb8e4",
+                "reference": "11d24e806e5bd1540288619ea8adafc38d8fb8e4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "arcanedev/support": "^5.1",
+                "league/commonmark": "^1.2",
+                "league/commonmark-ext-table": "^2.1",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpcov": "^6.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Arcanedev\\LaravelMarkdown\\LaravelMarkdownServiceProvider",
+                        "Arcanedev\\LaravelMarkdown\\Providers\\DeferredServicesProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\LaravelMarkdown\\": "src/"
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Markdown parsing for Laravel with blade directives",
+            "homepage": "https://github.com/ARCANEDEV/LaravelMarkdown",
+            "keywords": [
+                "arcanedev",
+                "blade",
+                "laravel",
+                "markdown",
+                "md",
+                "parser",
+                "parsing"
+            ],
+            "support": {
+                "issues": "https://github.com/ARCANEDEV/LaravelMarkdown/issues",
+                "source": "https://github.com/ARCANEDEV/LaravelMarkdown/tree/master"
+            },
+            "time": "2020-01-21T09:59:39+00:00"
+        },
+        {
+            "name": "arcanedev/support",
+            "version": "5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/Support.git",
+                "reference": "1845603e86d7fc705c7159612b87a278c971789f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/Support/zipball/1845603e86d7fc705c7159612b87a278c971789f",
+                "reference": "1845603e86d7fc705c7159612b87a278c971789f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/filesystem": "^6.0",
+                "illuminate/support": "^6.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpcov": "^6.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\Support\\": "src/"
+                },
+                "files": [
+                    "constants.php",
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc"
+                }
+            ],
+            "description": "ARCANEDEV Support Helpers",
+            "homepage": "https://github.com/ARCANEDEV/Support",
+            "keywords": [
+                "arcanedev",
+                "arcanesoft",
+                "laravel",
+                "support"
+            ],
+            "support": {
+                "issues": "https://github.com/ARCANEDEV/Support/issues",
+                "source": "https://github.com/ARCANEDEV/Support/tree/master"
+            },
+            "time": "2020-02-14T16:40:44+00:00"
+        },
         {
             "name": "caouecs/laravel-lang",
             "version": "4.0.11",
@@ -58,6 +200,64 @@
             },
             "abandoned": "https://github.com/Laravel-Lang/lang",
             "time": "2020-03-17T15:24:26+00:00"
+        },
+        {
+            "name": "codingyu/laravel-ueditor",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codingyu/laravel-ueditor.git",
+                "reference": "c2a6f3d6efb98d6e0bfc193663c5152c766a851a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codingyu/laravel-ueditor/zipball/c2a6f3d6efb98d6e0bfc193663c5152c766a851a",
+                "reference": "c2a6f3d6efb98d6e0bfc193663c5152c766a851a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "laravel/framework": "~5.5|~6.0|~7.0|~8.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "overtrue/laravel-filesystem-qiniu": "如果你想要使用七牛云存储，也许你需要安装它哦~"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codingyu\\LaravelUEditor\\UEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codingyu\\LaravelUEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codingyu",
+                    "email": "everceyu@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "support": {
+                "source": "https://github.com/codingyu/laravel-ueditor/tree/2.0.2"
+            },
+            "time": "2020-11-17T11:45:07+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1044,6 +1244,82 @@
                 }
             ],
             "time": "2021-03-28T18:51:39+00:00"
+        },
+        {
+            "name": "league/commonmark-ext-table",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark-ext-table.git",
+                "reference": "3228888ea69636e855efcf6636ff8e6316933fe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark-ext-table/zipball/3228888ea69636e855efcf6636ff8e6316933fe7",
+                "reference": "3228888ea69636e855efcf6636ff8e6316933fe7",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "league/commonmark": "~0.19.3|^1.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "phpstan/phpstan": "~0.11",
+                "phpunit/phpunit": "^7.0|^8.0",
+                "symfony/var-dumper": "^4.0",
+                "vimeo/psalm": "^3.0"
+            },
+            "type": "commonmark-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\Ext\\Table\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Hasoň",
+                    "email": "martin.hason@gmail.com"
+                },
+                {
+                    "name": "Webuni s.r.o.",
+                    "homepage": "https://www.webuni.cz"
+                },
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com"
+                }
+            ],
+            "description": "Table extension for league/commonmark",
+            "homepage": "https://github.com/thephpleague/commonmark-ext-table",
+            "keywords": [
+                "commonmark",
+                "extension",
+                "markdown",
+                "table"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/commonmark-ext-table/issues",
+                "source": "https://github.com/thephpleague/commonmark-ext-table/tree/master"
+            },
+            "abandoned": "league/commonmark",
+            "time": "2019-09-26T13:28:33+00:00"
         },
         {
             "name": "league/flysystem",
